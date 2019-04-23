@@ -1,0 +1,17 @@
+package: github.com/clcollins/goKube-event-watcher
+import:
+- package: github.com/golang/glog
+- package: k8s.io/api
+  version: kubernetes-1.14.1
+  subpackages:
+  - core/v1
+- package: k8s.io/apimachinery
+  version: kubernetes-1.14.1
+  subpackages:
+  - pkg/fields
+- package: k8s.io/client-go
+  version: kubernetes-1.14.1
+  subpackages:
+  - kubernetes
+  - tools/cache
+  - tools/clientcmd
